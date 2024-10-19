@@ -1,0 +1,169 @@
+:root {
+  --main-color: #1d1e18;
+  --alt-color: #6b8f71;
+}
+
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  /* Set font size for easy calculations */
+  font-size:62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: fira code, consolas;
+  background-color: var(--main-color);
+  color: white;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+section {
+width: 70vw;
+height: 100vh;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+p {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Nav */
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:60px;
+}
+
+#nav-list {
+  display: flex;
+  list-style-type: none;
+}
+
+#nav-list a {
+  display: block;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+#navbar, #nav-list, li {
+  background-color: var(--alt-color);
+}
+
+#navbar li:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+#navbar li:active {
+  background-color: #445745;
+}
+
+/* Welcome Section */
+
+#welcome-section {
+  text-align: center;
+  width: 100vw;
+  padding-top: 40vh;
+}
+
+#welcome-section h1 {
+  font-size: 75px;
+}
+
+#welcome-section p {
+  color: var(--alt-color);
+  font-size: 30px;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+/* Projects Section */
+
+#projects{
+  border: 1px solid orange;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100vh;
+  width: 80%;
+  margin: auto;
+  padding-top: 10%;
+}
+
+#projects h2 {
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+}
+
+
+.project-tile {
+  border: 2px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 30%;
+  margin: 0 5%;
+}
+
+.project-tile img {
+  /*border: 1px dotted;*/
+  width: 100%;
+  height: 90%;
+}
+
+.project-title {
+  /*border: 1px solid green;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  background-color: var(--alt-color);
+  width: 100%;
+  height: 10%;
+}
+
+/* Contact Section */
+#profile-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space evenly;
+  height: 100vh;
+  padding: 15vw;
+}
+
+.contact-link {
+  width: 250px;
+  height: 250px;
+}
+
+.contact-link img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
