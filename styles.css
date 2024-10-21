@@ -35,7 +35,7 @@ height: 100vh;
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 30px;
 }
 
 p {
@@ -57,6 +57,7 @@ a {
   left: 0;
   width: 100%;
   height:60px;
+  z-index: 100;
 }
 
 #nav-list {
@@ -99,74 +100,61 @@ a {
   color: var(--alt-color);
   font-size: 30px;
   font-style: italic;
-  margin-top: 5px;
+  margin-top: 5 px;
 }
 
 /* Projects Section */
 
-#projects{
-  border: 1px solid orange;
+#projects {
+  width: 100%;
+  height: auto;
+  padding: 10rem 2rem;
+}
+
+.projects-section-header {
+  width: 100%;
+  text-align: center;
+}
+
+.project-grid {
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  height: 100vh;
-  width: 80%;
+  justify-content: space-evenly;
+  margin: 40px auto 0;
 }
-
-#projects h2 {
-  border: 1px solid blue;
-  font-weight: normal;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 0px;
-}
-
 
 .project-tile {
-  border: 2px solid red;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 20%;
-  height: 30%;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 350px;
+  height: 350px;
+  margin: 10px;
 }
 
-.project-tile img {
-  /*border: 1px dotted;*/
+.project-tile:hover {
+  transform: scale(1.05);
+  transition: 0.15s;
+}
+
+.project-image {
   width: 100%;
-  height: 90%;
+  height: 100%;
+  object-fit: cover;
+
 }
 
 .project-title {
-  /*border: 1px solid green;*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
+  border: 1px solid grey;
   background-color: var(--alt-color);
+  text-align: center;
   width: 100%;
-  height: 10%;
+  height: 50px;
+  padding: 10px;
 }
 
 /* Contact Section */
 #profile-link {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space evenly;
-  height: 100vh;
-  padding: 15vw;
-}
 
-.contact-link {
-  width: 250px;
-  height: 250px;
-}
-
-.contact-link img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
 }
