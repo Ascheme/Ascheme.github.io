@@ -5,13 +5,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
 </head>
 <body>
 <nav id="navbar">
     <ul id="nav-list">
         <li><a href="#welcome-section">Welcome</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#profile-link">Contact</a></li>
+        <li><a href="#profile-section" id="contact-link">Contact</a></li>
     </ul>
 </nav>
 
@@ -21,7 +22,7 @@
 </section>
 
 <section id="projects">
-    <h2 class="projects-section-header">What I've worked on, so far...</h2>
+    <h2 id="projects-section-header">What I've worked on, so far...</h2>
     <div class="project-grid">
         <a
                 class="project-tile"
@@ -36,7 +37,7 @@
         </a>
         <a
                 class="project-tile"
-                href="https://i.im.ge/2024/10/21/kERAwx.Screenshot-2024-10-20-at-21-03-25-Akira-Toriyama.png"
+                href="https://ascheme.github.io/Tribute_Page/"
                 target="_blank"
         >
             <img
@@ -71,29 +72,29 @@
     </div>
 </section>
 
-<section id="profile-link">
-    <div class="profile-link-header">
+<section id="profile-section">
+    <div id="profile-section-header" class="fade-in">
         <h2>Let's work together</h2>
-        <p>Team work makes the dream work!</p>
+        <p>and make something <span class="underline">GREAT!</span></p>
     </div>
-    <div class="contact-grid">
-        <a class="contact-link">
+    <div class="profile-grid">
+        <a class="profile-link">
             <img
-                    class="contact-image"
+                    class="profile-image"
                     src="https://cdn.icon-icons.com/icons2/3685/PNG/512/github_logo_icon_229278.png"
                     alt="Github Logo" />
             <p>Github</p>
         </a>
-        <a class="contact-link">
+        <a class="profile-link">
             <img
-                    class="contact-image"
+                    class="profile-image"
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s"
                     alt="LinkedIn Logo" />
             <p>LinkedIn</p>
         </a>
-        <a class="contact-link">
+        <a class="profile-link">
             <img
-                    class="contact-image"
+                    class="profile-image"
                     src="https://clipartix.com/wp-content/uploads/2016/04/Paperclip-crafts-on-paperclip-bookmarks-paper-clip-clipart.jpg"
                     alt="Resume Icon" />
             <p>Resume</p>
